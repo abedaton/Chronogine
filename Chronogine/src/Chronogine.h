@@ -1,9 +1,9 @@
 #pragma once
 
 // For use by Chronogine Applications
-#include <stdio.h>
-#include "Chronogine\Application.h"
+#include "Chronogine/Application.h"
+#include "Chronogine/Log.h"
 
 // ---Entry Point----
-#include "Chronogine\EntryPoint.h"
+#include "Chronogine/EntryPoint.h"
 //-------------------

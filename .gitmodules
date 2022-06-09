@@ -1,0 +1,3 @@
+[submodule ".\\Chronogine\\vendor\\spdlog"]
+	path = .\\Chronogine\\vendor\\spdlog
+	url = https://github.com/gabime/spdlog

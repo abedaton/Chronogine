@@ -4,6 +4,9 @@
     <Filter Include="Chronogine">
       <UniqueIdentifier>{91447B35-7DFC-BC82-E603-96DED2DA5773}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Chronogine\Events">
+      <UniqueIdentifier>{550366F6-C119-648C-0A91-EFAD76E63414}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Chronogine.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Chronogine\EntryPoint.h">
       <Filter>Chronogine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chronogine\Events\ApplicationEvent.h">
+      <Filter>Chronogine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chronogine\Events\Event.h">
+      <Filter>Chronogine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chronogine\Events\KeyEvent.h">
+      <Filter>Chronogine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chronogine\Events\MouseEvent.h">
+      <Filter>Chronogine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Chronogine\Log.h">
       <Filter>Chronogine</Filter>

@@ -34,6 +34,7 @@
     <ClInclude Include="src\Chronogine\Log.h">
       <Filter>Chronogine</Filter>
     </ClInclude>
+    <ClInclude Include="src\cepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Chronogine\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Chronogine\Log.cpp">
       <Filter>Chronogine</Filter>
     </ClCompile>
+    <ClCompile Include="src\cepch.cpp" />
   </ItemGroup>
 </Project>

@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Chronogine {
 
 	class CGINE_API WindowResizeEvent : public Event {

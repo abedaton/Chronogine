@@ -1,9 +1,6 @@
 #pragma once
-
+#include "cepch.h"
 #include "Chronogine/Core.h"
-
-#include <string>
-#include <functional>
 
 
 namespace Chronogine {

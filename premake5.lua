@@ -9,13 +9,25 @@ workspace "Chronogine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relatives to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Chronogine/vendor/GLFW/include"
+
+include "Chronogine/vendor/GLFW"
+
+
 project "Chronogine"
 	location "Chronogine"
 	kind "SharedLib"
 	language "C++"
+	staticruntime "off"
+	runtime "Release"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "cepch.h"
+	pchsource "Chronogine/src/cepch.cpp"
 
 	files{
 		"%{prj.name}/src/**.h",
@@ -24,7 +36,13 @@ project "Chronogine"
 
 	includedirs {
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links {
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

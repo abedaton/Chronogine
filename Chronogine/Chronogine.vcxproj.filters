@@ -7,6 +7,12 @@
     <Filter Include="Chronogine\Events">
       <UniqueIdentifier>{550366F6-C119-648C-0A91-EFAD76E63414}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Chronogine\Platform">
+      <UniqueIdentifier>{05341244-7195-EF51-FA02-360466632611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chronogine\Platform\Windows">
+      <UniqueIdentifier>{3F138249-AB20-B02F-3407-AC1AA0137CE6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Chronogine.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\Chronogine\Log.h">
       <Filter>Chronogine</Filter>
     </ClInclude>
+    <ClInclude Include="src\Chronogine\Platform\Windows\WindowsWindow.h">
+      <Filter>Chronogine\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chronogine\Window.h">
+      <Filter>Chronogine</Filter>
+    </ClInclude>
     <ClInclude Include="src\cepch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Chronogine\Log.cpp">
       <Filter>Chronogine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chronogine\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Chronogine\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\cepch.cpp" />
   </ItemGroup>

@@ -5,20 +5,16 @@
 #include "Chronogine/Log.h"
 
 namespace Chronogine {
-	Application::Application(){}
+	Application::Application(){
+		m_Window = std::unique_ptr<Window>(Window::Create());
+	}
 
 	Application::~Application(){}
 
 	void Application::Run() {
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication)) {
-			CGINE_TRACE(e);
-		}
 
-		if (e.IsInCategory(EventCategoryInput)) {
-			CGINE_TRACE(e);
+		while (m_Running){
+			m_Window->OnUpdate();
 		}
-
-		while (true){}
 	}
 }

@@ -56,4 +56,6 @@ namespace Chronogine {
 	bool WindowsWindow::IsVSync() const {
 		return m_Data.VSync;
 	}
+
+	void WindowsWindow::OnUpdate(){}
 }
